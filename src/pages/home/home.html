@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor = "let item of restaurants" class="card-background-page">
+     
+        <ion-card (click) = "dispResDet(item)">
+          <img src="{{item.restaurant.featured_image}}"/>
+          <div class="card-title">{{item.restaurant.name}}</div>
+          <div class="card-subtitle">{{item.restaurant.cuisines}}</div>
+        </ion-card>    
+
+  </ion-item>
+</ion-list>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "foodonline",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
